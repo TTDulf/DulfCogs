@@ -27,7 +27,7 @@ class NonNegative(numbers.Real, Generic[T]):
         return inner
 
 
-class SecureInv(commands.Cog):
+class DulfInvite(commands.Cog):
     async def red_get_data_for_user(self, *, user_id):
         return {}  # No data to get
 
@@ -38,7 +38,7 @@ class SecureInv(commands.Cog):
         super().__init__()
         self.bot = bot
         self.last_purge = {}
-        self.config = Config.get_conf(self, identifier=2_113_674_295, force_registration=True)
+        self.config = Config.get_conf(self, identifier=2_113_274_155, force_registration=True)
         self.config.register_guild(**defaults)
 
     @commands.group(invoke_without_command=True)
